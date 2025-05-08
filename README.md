@@ -24,6 +24,8 @@ Bu proje, kullanıcıların tarayıcı üzerinden kendi YOLOv8 modellerini yükl
 
 -Web arayüzü üzerinden model ve görsel yükleyerek tahmin alın.
 
+---
+
   KURULUM ADIMLARI
 
 -Proje klasörüne gidin:
@@ -37,6 +39,8 @@ python app.py
 
 -Tarayıcınızda şu adresi açın:
 http://127.0.0.1:5000
+
+---
 
    DOSYA YAPISI
 
@@ -53,6 +57,8 @@ http://127.0.0.1:5000
 -requirements.txt → Proje bağımlılıkları
 
 -yolov8n.pt → Örnek model (varsa)
+
+---
 
    TEKNOLOJİLER
    
