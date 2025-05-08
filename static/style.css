@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    height: 100vh;
+}
+
+.navbar {
+    width: 100%;
+    background-color: #042c55;
+    color: white;
+    padding: 15px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    text-align: left;
+}
+
+.left {
+    width: 70%;
+    background: #beb8b8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    overflow: hidden;
+}
+
+canvas {
+    border-radius: 10px;
+}
+
+.right {
+    width: 30%;
+    background: #fff;
+    padding: 25px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    margin-top: 0;
+    text-align: center;
+    color: #444;
+}
+
+input[type="file"] {
+    background: #f2f2f2;
+    border: 2px dashed #bbb;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 0 auto 20px auto;
+    cursor: pointer;
+    transition: background 0.3s;
+    display: block;
+}
+
+input[type="file"]:hover {
+    background: #e8e8e8;
+}
+
+.centered-text {
+    text-align: center;
+}
+
+button {
+    padding: 8px 16px;
+    background-color: #042c55;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    width: fit-content;
+    align-self: center;
+
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+    overflow-y: auto;
+    max-height: 200px;
+}
+
+li {
+    background: #f0f0f0;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+li:nth-child(odd) {
+    background: #e0e0e0;
+}

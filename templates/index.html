@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>YOLO Inference</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <div class="navbar">
+        YOLO Inference
+    </div>
+
+    <div class="left">
+        <canvas id="canvas"></canvas>
+    </div>
+    <div class="right">
+        <h2>YOLO Inference</h2>
+
+        <input type="file" id="modelFile">
+        <button onclick="uploadModel()">Upload Model</button>
+
+        <input type="file" id="imageFile" onchange="loadImage()">
+        <button onclick="predictImage()">Predict</button>
+
+        <h2>Results</h2>
+        <ul id="resultList">
+            <li>No predictions yet.</li>
+        </ul>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+
+</html>
